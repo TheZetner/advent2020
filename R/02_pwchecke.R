@@ -27,7 +27,7 @@ a <-
 count(a, Pass)
 
 
-# Part b ####
+# Part B ####
 
 # Rowwise required because this function doesn't play well with dplyr
 
