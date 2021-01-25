@@ -78,7 +78,7 @@ datlist <-
         mutate(val = m[ypos, xpat]))
 
 # Sanity check. Ungroup to turn off rowwise
-datlist[[2]] %>% ungroup() %>% summarise(trees = sum(val))
+# datlist[[2]] %>% ungroup() %>% summarise(trees = sum(val))
 
 
 bind_rows(datlist, .id = "slope") %>%
@@ -86,5 +86,5 @@ bind_rows(datlist, .id = "slope") %>%
   summarise(trees = sum(val)) %>%
   summarise(prod(trees))
 
-sum(dat$val)
+
 
